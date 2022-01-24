@@ -1,0 +1,356 @@
+html {
+font-size: 62.5%;
+}
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  line-height: 1.2;
+  color: #F7F7F7;
+  box-sizing: border-box;
+
+}
+
+.header__section {
+  background-image:linear-gradient(to right bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../img/hero.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-pic {
+  margin-right: 15px;
+}
+
+.header__logo-text {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item {
+  margin-right: 60px; /* разобраться с отступами в меню */
+  font-size: 23px;
+  line-height: 60px;
+}
+.header-item-search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-input__search{
+height: 4rem;
+width: 70%;
+transition: width 0.5s;
+padding-left:1rem ;
+}
+.header-input__search:focus{
+  width: 100%;
+}
+
+.header-input__search::-webkit-input-placeholder{
+  padding-left:1rem ;
+}
+
+.header-input__button{
+  height: 4rem;
+  margin-left: -3.5rem;
+  margin-top: -2rem;
+  background: none;
+  border: none;
+}
+.header__search-pic{
+  background-color: #000;
+  border-radius: 20%;
+  
+}
+.header__item:last-child {
+  margin-right: 0;
+  border: 2px solid #CD6326;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 2px 23px;
+}
+
+.header__item:last-child:hover {
+  background: #CD6326;
+}
+
+.header__item:last-child:active {
+  background: #8F5613;
+}
+
+.header__link {
+  font-size: 23px;
+  line-height: 60px;
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+.survival {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.survival__title {
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #CD6326;
+  margin-bottom: 51px;
+}
+
+.survival__subtitle {
+  max-width: 274px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 49px;
+}
+
+.survival__button {
+  padding: 16px 42px;
+  background: #CD6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #F7F7F7;
+  border: 0;
+}
+
+.survival__button:hover {
+  background: #E39128;
+}
+
+.survival__button:active {
+  background: #8F5613;
+}
+
+/* Latest articles */
+
+.latest-articles {
+  background-color: #CCCCCC;
+}
+
+.latest-articles__title {
+  padding-top: 120px; /* костыли с отступами?? */
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.latest-articles__subtitle {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #666666;
+  padding-bottom: 120px;
+}
+
+
+.latest-articles__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  margin: 0 auto;
+  justify-items: center;
+  
+  max-width: 90%;
+}
+
+
+.lacd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 30rem;
+  height: 36rem;
+  padding-bottom: 3rem;
+  box-shadow: 2rem 2.5rem 4rem rgba(0,0,0,0.45);
+  transform: skewX(2deg) skewY(5deg);
+  transition: transform 0.5s, box-shadow 0.2s;
+}
+.lacd:hover{
+    transform: skewX(0deg) skewY(0deg) scale(1.03);
+    box-shadow: 2rem 2.5rem 4rem rgba(0,0,0,0.75);
+
+}
+
+.latest-articles__card-deer { /* Вот так и появляется говнокод */
+  
+  background-image: linear-gradient(to right bottom,rgba(0,0,0,0.40),rgba(0,0,0,0.45)),url(../img/deer.jpg);
+
+}
+
+.latest-articles__card-squirrel {
+  
+  background-image:linear-gradient(to right bottom,rgba(0,0,0,0.40),rgba(0,0,0,0.45)), url(../img/squirrel.jpg);
+}
+
+.latest-articles__card-bird {
+ 
+  background-image:linear-gradient(to right bottom,rgba(0,0,0,0.40),rgba(0,0,0,0.45)), url(../img/bird.jpg);
+}
+
+.latest-articles__card-articles__title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.latest-articles__card-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+
+}
+.latest-articles{
+  display: flex;
+  flex-direction: column;
+
+}
+.wrapper1{flex: 0 0 80%;}
+.wrapper2{flex: 0 0 20%;
+padding: 30rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.latest-articles__text {
+  text-align: center;
+  font-size: 3rem;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+
+.mailform {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.mailform__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mailform__field {
+  font-size: 2.3rem;
+  padding-left: 1rem;
+  width: 60rem;
+  height: 7rem;
+  border: 1px solid #666;
+  background-color: transparent;
+  color: #666;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.mailform__submit {
+  padding: 16px 42px;
+  background: #CD6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #F7F7F7;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.mailform__submit:hover {
+  background: #E39128;
+}
+
+.mailform__submit:active {
+  background: #8F5613;
+}
+
+.footer {
+  
+  background-image:linear-gradient(to right bottom,rgba(0,0,0,0.40),rgba(0,0,0,0.45)), url(../img/footer.jpg);
+background-size: 100% 100%;
+background-position: 100% 100%;
+background-repeat: no-repeat;
+}
+
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem ;
+}
+
+.footer__logo-nav {
+ flex: 0 0 20%;
+}
+.nav__links{
+  flex: 0 0 60%;
+  margin-right: auto;
+}
+
+.footer__logo-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer__logo-text {
+  font-family: Roboto;
+  font-size: 3.2rem;
+  line-height: 6.0rem;
+  text-transform: uppercase;
+}
+
+
+.footer-nav__link {
+  font-size: 23px;
+  line-height: 60px;
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666666;
+}
+
+.footer-nav__list,.social-links__list{
+  display: flex;
+}
+
+.footer-nav__list{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
