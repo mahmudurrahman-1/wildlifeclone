@@ -1,3 +1,3 @@
-# Wildlife
+# Wildlifeclone
 
-https://hangezoe.github.io/wildlife/
+https://mahmudurrahman-1.github.io/wildlifeclone/
