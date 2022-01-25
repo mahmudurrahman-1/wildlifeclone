@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wildlife</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -19,7 +19,9 @@
             <a href="#" class="header__logo-link"><img src="assets/img/svg/logo.svg" alt="logo" class="header__logo-pic"></a>
             <p class="header__logo-text">Wildlife</p>
           </div>
-          <nav class="header__nav">
+          <span id="sidebar-open" class="header__navi" style="cursor:pointer" onclick="openNav()">&#9776; open</span>
+          <nav id="sidebar-close" class="header__nav"> 
+            <span class="side-close" style="font-size:30px;cursor:pointer" onclick="closeNav()">&times;</span>
             <ul class="header__list">
               <li class="header__item">
                 <a href="#" class="header__link">Blog</a>
@@ -105,5 +107,6 @@
       </div>
   
   </footer>
+  <script src="./assets/js.js"></script>
 </body>
 </html>
